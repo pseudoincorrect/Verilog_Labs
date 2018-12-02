@@ -1,0 +1,104 @@
+C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/Add_Sub/Add_Sub.v {1 {vlog -work work -stats=none C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/Add_Sub/Add_Sub.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Add_Sub
+
+Top level modules:
+	Add_Sub
+
+} {} {}} C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/fifo_out/fifo_node.v {1 {vlog -work work -stats=none C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/fifo_out/fifo_node.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fifo_node
+
+Top level modules:
+	fifo_node
+
+} {} {}} C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/testbenches/pipes_testbench.v {1 {vlog -work work -stats=none C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/testbenches/pipes_testbench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module pipes_testbench
+
+Top level modules:
+	pipes_testbench
+
+} {} {}} C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/testbenches/divergence_node_testbench.v {1 {vlog -work work -stats=none C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/testbenches/divergence_node_testbench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module divergence_node_testbench
+
+Top level modules:
+	divergence_node_testbench
+
+} {} {}} C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/VGA/VGA_Ctrl.v {1 {vlog -work work -stats=none C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/VGA/VGA_Ctrl.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VGA_Ctrl
+
+Top level modules:
+	VGA_Ctrl
+
+} {} {}} C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/Div/Div.v {1 {vlog -work work -stats=none C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/Div/Div.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Div
+
+Top level modules:
+	Div
+
+} {} {}} C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/fifo_out/fifo_out.v {1 {vlog -work work -stats=none C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/fifo_out/fifo_out.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fifo_out
+
+Top level modules:
+	fifo_out
+
+} {} {}} C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/testbenches/fractal_control_testbench.v {1 {vlog -work work -stats=none C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/testbenches/fractal_control_testbench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fractal_control_testbench
+
+Top level modules:
+	fractal_control_testbench
+
+} {} {}} C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/para_mux.v {1 {vlog -work work -stats=none C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/para_mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module para_mux
+
+Top level modules:
+	para_mux
+
+} {} {}} C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/Mult/Mult.v {1 {vlog -work work -stats=none C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/Mult/Mult.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Mult
+
+Top level modules:
+	Mult
+
+} {} {}} C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/pll/pll_VGA.v {1 {vlog -work work -stats=none C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/pll/pll_VGA.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module pll_VGA
+
+Top level modules:
+	pll_VGA
+
+} {} {}} C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/seven_segments/Seven_segments_display.v {1 {vlog -work work -stats=none C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/seven_segments/Seven_segments_display.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Seven_segments_display
+-- Compiling module SEG7_LUT
+
+Top level modules:
+	Seven_segments_display
+
+} {} {}} C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/Fconvert2/fconvert2.v {1 {vlog -work work -stats=none C:/Users/Max/Programming/Verilog/Cornell_labs/lab4/quartus17/src/IPs/Fconvert2/fconvert2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fconvert2_altbarrel_shift_tvf
+-- Compiling module fconvert2_altpriority_encoder_3e8
+-- Compiling module fconvert2_altpriority_encoder_6e8
+-- Compiling module fconvert2_altpriority_encoder_be8
+-- Compiling module fconvert2_altpriority_encoder_3v7
+-- Compiling module fconvert2_altpriority_encoder_6v7
+-- Compiling module fconvert2_altpriority_encoder_bv7
+-- Compiling module fconvert2_altpriority_encoder_r08
+-- Compiling module fconvert2_altpriority_encoder_rf8
+-- Compiling module fconvert2_altpriority_encoder_qb6
+-- Compiling module fconvert2_altfp_convert_96n
+-- Compiling module fconvert2
+
+Top level modules:
+	fconvert2
+
+} {} {}}

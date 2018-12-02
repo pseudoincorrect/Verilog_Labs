@@ -1,0 +1,635 @@
+!SESSION 2017-11-14 15:32:08.222 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-11-14 15:34:19.056
+!MESSAGE Indexed 'DDA_nios_bsp' (80 sources, 60 headers) in 0.69 sec: 1,171 declarations; 3,325 references; 118 unresolved inclusions; 5 syntax errors; 209 unresolved names (4.44%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-11-14 15:34:20.599
+!MESSAGE Indexed 'DDA_nios' (1 sources, 14 headers) in 0.02 sec: 20 declarations; 75 references; 19 unresolved inclusions; 0 syntax errors; 9 unresolved names (8.65%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 15:36:49.488
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1510666195]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 15:36:51.263
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1510666195 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 15:40:52.836
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 15:40:53.356
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1510666195]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 15:40:55.177
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1510666195 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 15:42:03.684
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 15:42:04.159
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1510666195]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 15:42:05.971
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1510666195 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 16:34:25.923
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 16:34:26.391
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1510666195]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 16:34:28.196
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1510666195 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-11-14 16:58:31.401
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-11-14 16:58:31.414
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 16:58:51.900
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-11-14 16:58:54.658
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x10002020] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 16:58:54.884
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-11-14 16:58:57.829
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x10002020, /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-11-14 16:58:57.846
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 16:59:28.850
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-11-14 16:59:31.578
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x10002020] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 16:59:31.800
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-11-14 16:59:34.624
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x10002020, /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-11-14 16:59:34.639
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:00:38.965
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:00:40.571
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:06:42.177
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:06:43.915
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:08:35.476
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:08:35.989
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:08:37.718
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:09:18.052
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:09:18.550
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:09:20.313
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+!SESSION 2017-11-14 17:11:42.099 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:13:54.883
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:13:56.549
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:19:12.297
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:19:12.782
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:19:14.427
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:20:01.172
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:20:01.633
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:20:03.357
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:20:39.838
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:20:40.296
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:20:42.024
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:23:30.196
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:23:30.715
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:23:32.382
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:26:20.940
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:26:21.435
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:26:23.094
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:30:59.237
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:30:59.706
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:31:01.352
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:33:44.605
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:33:45.069
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:33:46.724
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:35:06.310
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:35:06.773
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:35:08.461
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:36:38.686
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:36:39.150
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:36:40.890
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:37:44.303
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:37:44.764
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:37:46.453
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:40:47.593
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:40:48.065
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:40:49.763
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:41:25.772
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:41:26.221
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:41:27.803
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:42:54.239
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:42:54.704
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:42:56.356
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:43:29.120
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:43:29.580
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:43:31.231
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:44:33.979
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:44:34.442
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:44:36.134
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:44:59.341
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:44:59.803
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+!SESSION 2017-11-14 17:46:14.128 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-11-14 17:46:18.629
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:47:00.338
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:47:01.988
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:48:09.649
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:48:10.095
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:48:11.680
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:48:36.855
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:48:37.319
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:48:38.981
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:54:34.669
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:54:35.156
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:54:36.849
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:58:31.249
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:58:31.717
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 17:58:33.382
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:00:02.914
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:00:03.383
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:00:05.038
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:00:45.938
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:00:46.413
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:00:48.134
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:01:27.677
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:01:28.119
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:01:29.751
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:02:43.011
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:02:43.458
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:02:45.102
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:05:01.428
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:05:01.870
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:05:03.494
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:06:14.072
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:06:14.516
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:06:16.160
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:07:04.740
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:07:05.193
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:07:06.795
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:08:05.714
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:08:06.189
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:08:07.850
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:09:53.466
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:09:53.932
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:09:55.571
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:10:55.144
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:10:55.619
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:10:57.238
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:11:23.684
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:11:24.153
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:11:25.813
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:12:57.198
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:12:57.670
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:12:59.355
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:13:32.375
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+!SESSION 2017-11-14 18:14:17.104 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-11-14 18:14:20.571
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:14:33.004
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:14:34.646
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:22:37.802
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:22:38.276
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:22:39.969
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:25:40.578
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:25:41.055
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:25:42.710
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:26:33.365
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:26:33.830
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:26:35.466
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:35:12.832
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:35:13.284
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:35:14.916
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:35:40.759
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:35:41.226
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:35:42.865
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:36:33.485
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:36:33.950
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:36:35.617
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:38:28.665
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:38:29.124
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:38:30.779
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:39:21.376
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:39:21.847
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:39:23.526
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:42:07.105
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:42:07.572
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:42:09.270
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:42:22.961
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:42:23.935
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:42:25.602
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:46:13.458
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:46:13.931
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:46:15.619
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:47:38.071
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:47:38.536
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:47:40.219
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:50:19.511
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:50:19.994
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:50:21.724
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:50:50.641
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:50:51.101
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:50:52.779
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:51:13.676
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:51:14.141
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:51:15.800
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:52:03.399
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:52:03.869
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-11-14 18:52:30.470
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.debug.internal.ui.DebugUIPlugin$8
+!SESSION 2017-11-14 18:52:42.769 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:53:08.304
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:53:09.947
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:54:18.601
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:54:19.068
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10002020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-11-14 18:54:20.719
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10002020 /cygdrive/c/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios/DDA_nios.elf]

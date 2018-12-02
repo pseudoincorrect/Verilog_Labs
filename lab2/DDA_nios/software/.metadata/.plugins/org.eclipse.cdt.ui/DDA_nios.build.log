@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project DDA_nios ****
+
+make all 
+Info: Building C:/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios_bsp/
+make --no-print-directory -C C:/Users/max/programming/Verilog/Cornell_labs/lab2/DDA_nios/software/DDA_nios_bsp/
+[BSP build complete]
+[DDA_nios build complete]
+
+**** Build Finished ****

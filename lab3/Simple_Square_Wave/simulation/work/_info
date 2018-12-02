@@ -1,0 +1,62 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vnode_testbench
+!i10b 1
+!s100 >mG1CMLN:aO:kBbl?o98=1
+IkoWnBZFz<fkLoP?TH2Uo63
+Z1 VZjbgUdMZ>J^_an87DF1Xn1
+Z2 dC:\Users\max\programming\Verilog\Cornell_labs\lab3\Simple_Square_Wave\simulation
+w1513176827
+Z3 8C:\Users\max\programming\Verilog\Cornell_labs\lab3\Simple_Square_Wave\src\mesh\node_testbench.v
+Z4 FC:\Users\max\programming\Verilog\Cornell_labs\lab3\Simple_Square_Wave\src\mesh\node_testbench.v
+L0 3
+Z5 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1513176833.302000
+!s107 C:\Users\max\programming\Verilog\Cornell_labs\lab3\Simple_Square_Wave\src\mesh\node_testbench.v|
+!s90 -reportprogress|300|-work|work|-O0|C:\Users\max\programming\Verilog\Cornell_labs\lab3\Simple_Square_Wave\src\mesh\node_testbench.v|
+!s101 -O0
+Z6 o-work work -O0
+vsigned_mult
+Z7 !s100 TU2P4:bdL3ZPARjYDGM?=3
+Z8 Ig1EP3e2GIFooJ1S`:1AW12
+Z9 V@LiR?j>k9?mljNcKn]WSW0
+R2
+Z10 w1513176767
+Z11 8C:\Users\max\programming\Verilog\Cornell_labs\lab3\Simple_Square_Wave\src\mesh\sound_node.v
+Z12 FC:\Users\max\programming\Verilog\Cornell_labs\lab3\Simple_Square_Wave\src\mesh\sound_node.v
+Z13 L0 136
+R5
+r1
+31
+Z14 !s108 1513176786.575000
+Z15 !s107 C:\Users\max\programming\Verilog\Cornell_labs\lab3\Simple_Square_Wave\src\mesh\sound_node.v|
+Z16 !s90 -reportprogress|300|-work|work|C:\Users\max\programming\Verilog\Cornell_labs\lab3\Simple_Square_Wave\src\mesh\sound_node.v|
+R6
+!i10b 1
+!s85 0
+!s101 -O0
+vsound_node
+Z17 !s100 [mUD3^E9_Ec^;eR0adm963
+Z18 IzX8RIG@VWoE4zU;UY`4O=3
+Z19 VbN9bGNjRRB[3hK4d2PzEk2
+R2
+R10
+R11
+R12
+L0 1
+R5
+r1
+31
+R14
+R15
+R16
+R6
+!i10b 1
+!s85 0
+!s101 -O0

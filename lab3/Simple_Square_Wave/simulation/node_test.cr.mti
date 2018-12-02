@@ -1,0 +1,9 @@
+C:/Users/max/programming/Verilog/Cornell_labs/lab3/Simple_Square_Wave/src/mesh/sound_node.v {1 {vlog -work work {C:\Users\max\programming\Verilog\Cornell_labs\lab3\Simple_Square_Wave\src\mesh\sound_node.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sound_node
+-- Compiling module signed_mult
+
+Top level modules:
+	sound_node
+
+} {} {}}

@@ -1,0 +1,327 @@
+
+#include "count_binary.h"
+#include "system.h"
+
+#define red      0xe0e0
+#define green    0x1c1c
+#define blue     0x0303
+#define yellow   0xfcfc
+#define cyan     0x1f1f
+#define magenta  0xe3e3
+#define white    0xffff
+#define black    0x0000
+
+void        VGA_box (int, int, int, int, short); // x1,y1,x2,y2,color
+void        VGA_point (int, int, short); // x,y,color
+void        VGA_line(int x0, int y0, int x1, int y1, short pixel_color);
+static void initial_message();
+static void init_dda();
+static int  abs(int value);
+void        VGA_circle (int xm, int ym, int r, short color);
+void        draw_springs (int x1, int x2, int y_mean, int height, short color);
+/* A "loop counter" variable. */
+// static alt_u8 count;
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+int main(void)
+{
+    int positions;
+    int16_t x1_16, x2_16;
+    int x1 = 0, x2 = 0, x2_old = 0, x1_old = 0;
+
+    initial_message();
+
+    init_dda();
+
+    // draw_something();
+    VGA_box (0, 0, 639, 479, black); // clear screen 640 x 480
+    VGA_box (100, 100, 539, 379, blue); // clear screen 640 x 480
+    VGA_box (100, 160, 150, 320, green); // clear screen 640 x 480
+    VGA_box (489, 160, 539, 320, green); // clear screen 640 x 480
+
+
+
+    // draw_something();
+    positions = IORD_ALTERA_AVALON_PIO_DATA(PIO_POSITIONS_IN_BASE);
+
+    x1_16  = (positions & 0xFFFF0000) >> 16;
+    x2_16  = (positions & 0x0000FFFF);
+    x1 = (x1_16 + 32768) / 102;
+    x2 = (x2_16 + 32768) / 102;
+
+
+    // draw_springs(100, 300, 240, 100, white);
+
+    while (1)
+    {
+        positions = IORD_ALTERA_AVALON_PIO_DATA(PIO_POSITIONS_IN_BASE);
+
+        x1_16 = (positions & 0xFFFF0000) >> 16;
+        x2_16 = (positions & 0x0000FFFF);
+
+        x1_old = x1;
+        x2_old = x2;
+
+        x1 = (x1_16 + 32768) / 102;
+        x2 = (x2_16 + 32768) / 102;
+        
+
+        // printf("x1 = %d      \n\rx2 = %d \n\r", x1, x2);
+
+        // VGA_box (x1-10,     200, x1+10,     280, yellow);
+        // VGA_box (x2-10,     200, x2+10,     280, red);
+
+        // VGA_box (x1_old-10, 200, x1_old+10, 280, black);
+        // VGA_box (x2_old-10, 200, x2_old+10, 280, black);
+
+
+        if      (x1 > x1_old) {VGA_box (x1_old-10, 200, x1-10,     280, blue);}
+        else if (x1 < x1_old) {VGA_box (x1+10,     200, x1_old+10, 280, blue);}
+        VGA_box (x1-10, 200, x1+10, 280, yellow);
+
+        if      (x2 > x2_old) {VGA_box (x2_old-10, 200, x2-10,     280, blue);}
+        else if (x2 < x2_old) {VGA_box (x2+10,     200, x2_old+10, 280, blue);}
+        VGA_box (x2-10, 200, x2+10, 280, red);
+
+        // left spring
+        draw_springs(150, x1_old-10, 240, 100, blue);
+        draw_springs(150, x1-10,     240, 100, white);
+        // middle spring
+        draw_springs(x1_old+10, x2_old-10, 240, 100, blue);
+        draw_springs(x1+10,     x2-10,     240, 100, white);
+        // right spring
+        draw_springs(x2_old+10, 489, 240, 100, blue);
+        draw_springs(x2+10,     489, 240, 100, white);
+
+        usleep(16666);
+    }
+
+    return 0;
+}
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+static void initial_message()
+{
+    printf("\n\n");
+    printf("**************************************\n");
+    printf("* Let's display something on the VGA *\n");
+    printf("**************************************\n");
+}
+
+
+
+
+static void init_dda()
+{
+    // x1 <= 18'h3C000; // -0.25;
+    // v1 <= 18'h38000; // -0.5;
+    // x2 <= 18'h0E800; //  0.70;
+    // v2 <= 18'h06800; //  0.2;
+
+    // x1 <= 18'h38000; //  -0.5; // symetrical
+    // v1 <= 18'h00000; //  0;
+    // x2 <= 18'h08000; //  0.5;
+    // v2 <= 18'h00000; //  0;
+
+    uint32_t start_init_addr = 0x1;
+    uint32_t k1_init_addr    = 0x2;
+    uint32_t k2_init_addr    = 0x3;
+    uint32_t km_init_addr    = 0x4;
+    uint32_t x1_init_addr    = 0x5;
+    uint32_t v1_init_addr    = 0x6;
+    uint32_t x2_init_addr    = 0x7;
+    uint32_t v2_init_addr    = 0x8;
+
+    uint32_t k1_init_val   = 0x10000;
+    uint32_t k2_init_val   = 0x10000;
+    uint32_t km_init_val   = 0x10000;
+    uint32_t x1_init_val   = 0x3B300;
+    uint32_t v1_init_val   = 0x3B300;
+    uint32_t x2_init_val   = 0x04D00;
+    uint32_t v2_init_val   = 0x04D00;
+
+    uint32_t k1_init   = (0xFFFFFFFF & k1_init_val) | (k1_init_addr << 24);
+    uint32_t k2_init   = (0xFFFFFFFF & k2_init_val) | (k2_init_addr << 24);
+    uint32_t km_init   = (0xFFFFFFFF & km_init_val) | (km_init_addr << 24);
+    uint32_t x1_init   = (0xFFFFFFFF & x1_init_val) | (x1_init_addr << 24);
+    uint32_t v1_init   = (0xFFFFFFFF & v1_init_val) | (v1_init_addr << 24);
+    uint32_t x2_init   = (0xFFFFFFFF & x2_init_val) | (x2_init_addr << 24);
+    uint32_t v2_init   = (0xFFFFFFFF & v2_init_val) | (v2_init_addr << 24);
+
+    uint32_t start_init_ON =  (0xFFFFFFFF & 0x1) | (start_init_addr << 24);
+    uint32_t start_init_OFF = (0xFFFFFFFF & 0x0) | (start_init_addr << 24);
+
+        // DDA OFF
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_INIT_DDA_OUT_BASE, start_init_OFF );
+    // send DDA initial values
+    IOWR_ALTERA_AVALON_PIO_DATA( PIO_INIT_DDA_OUT_BASE, k1_init );
+    IOWR_ALTERA_AVALON_PIO_DATA( PIO_INIT_DDA_OUT_BASE, k2_init );
+    IOWR_ALTERA_AVALON_PIO_DATA( PIO_INIT_DDA_OUT_BASE, km_init );
+    IOWR_ALTERA_AVALON_PIO_DATA( PIO_INIT_DDA_OUT_BASE, x1_init );
+    IOWR_ALTERA_AVALON_PIO_DATA( PIO_INIT_DDA_OUT_BASE, v1_init );
+    IOWR_ALTERA_AVALON_PIO_DATA( PIO_INIT_DDA_OUT_BASE, x2_init );
+    IOWR_ALTERA_AVALON_PIO_DATA( PIO_INIT_DDA_OUT_BASE, v2_init );
+    // DDA ON then OFF
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_INIT_DDA_OUT_BASE, start_init_ON  );
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_INIT_DDA_OUT_BASE, start_init_ON  );
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_INIT_DDA_OUT_BASE, start_init_OFF );
+}
+
+
+
+void draw_springs (int x1, int x2, int y_mean, int height, short color)
+{
+    int spring_x_1;
+    int spring_x_2;
+    int delta;
+
+    delta = ((x2-x1) / 3);
+    spring_x_1 = x1 + delta;
+    spring_x_2 = x1 + delta * 2;
+
+    VGA_line (x1,           y_mean,             spring_x_1,   y_mean + height/2,  color);
+    VGA_line (spring_x_1,   y_mean + height/2,  spring_x_2,   y_mean - height/2,  color);
+    VGA_line (spring_x_2,   y_mean - height/2,  x2,           y_mean           ,  color);
+}
+
+
+
+
+ // Bresenham's line algorithm c
+ void VGA_line(int x0 ,int y0, int x1, int y1, short pixel_color)
+ {
+    int dy =  abs (y1 - y0);
+    int dx = -abs (x1 - x0);
+    int sx = y0 < y1 ? 1 : -1;
+    int sy = x0 < x1 ? 1 : -1;
+    int err = dy + dx, e2; /* error value e_xy */
+    int offset;
+    volatile short * pixel_buffer = (short *) 0x08000000;   // VGA pixel buffer address
+    for (;;)
+    {  /* loop */
+        offset = (y0 << 9) + (x0>>1);
+        *(pixel_buffer + offset) = pixel_color; // compute halfword address, set pixel
+
+        if (y0 == y1 && x0 == x1)
+            break;
+
+        e2 = 2 * err;
+
+        if (e2 >= dx) { err += dx; y0 += sx; } /* e_xy+e_x > 0 */
+        if (e2 <= dy) { err += dy; x0 += sy; } /* e_xy+e_y < 0 */
+    }
+
+ // // Bresenham's line algorithm c
+ // void VGA_line(int x0, int y0, int x1, int y1, short pixel_color)
+ // {
+ //    int dx =  abs (x1 - x0);
+ //    int dy = -abs (y1 - y0);
+ //    int sx = x0 < x1 ? 1 : -1;
+ //    int sy = y0 < y1 ? 1 : -1;
+ //    int err = dx + dy, e2; /* error value e_xy */
+ //    int offset;
+ //    volatile short * pixel_buffer = (short *) 0x08000000;   // VGA pixel buffer address
+ //    for (;;)
+ //    {  /* loop */
+ //        offset = (x0 << 9) + (y0>>1);
+ //        *(pixel_buffer + offset) = pixel_color; // compute halfword address, set pixel
+
+ //        if (x0 == x1 && y0 == y1)
+ //            break;
+
+ //        e2 = 2 * err;
+
+ //        if (e2 >= dy) { err += dy; x0 += sx; } /* e_xy+e_x > 0 */
+ //        if (e2 <= dx) { err += dx; y0 += sy; } /* e_xy+e_y < 0 */
+ //    }
+
+
+
+ }
+
+
+/*********************************************************************
+ * Draw a point on the VGA monitor
+ ********************************************************************/
+void VGA_point(int x1, int y1, short pixel_color)
+{
+    int offset;
+    /* Declare volatile pointer to pixel buffer
+    (volatile means that IO load and store instructions will be used to
+    access these pointer locations, instead of regular memory loads and
+    stores) */
+    // VGA pixel buffer address
+    volatile short * pixel_buffer = (short *) 0x08000000;
+
+    /* assume that the box coordinates are valid */
+    offset = (y1 << 9) + (x1 >> 1);
+    // current_pixel_color = *(pixel_buffer + offset) ;
+
+    // // now low order bit in 16-bit word
+    // if (x1 & 0x1)
+    //  new_color = (current_pixel_color & 0x00ff) | (pixel_color & 0xff00);
+    // else
+    //  new_color = (current_pixel_color & 0xff00) | (pixel_color &     0x00ff);
+
+    // compute halfword address, set 2 pixel
+    *(pixel_buffer + offset) = pixel_color;
+}
+
+/****************************************************************************************
+ * Draw a filled rectangle on the VGA monitor
+****************************************************************************************/
+void VGA_box(int x1, int y1, int x2, int y2, short pixel_color)
+{
+    int offset, row, col;
+    /* Declare volatile pointer to pixel buffer (volatile means that IO load
+       and store instructions will be used to access these pointer locations,
+       instead of regular memory loads and stores) */
+    volatile short * pixel_buffer = (short *) 0x08000000;   // VGA pixel buffer address
+
+    /* assume that the box coordinates are valid */
+    for (row = y1; row <= y2; row++)
+    {
+        col = x1;
+        while (col <= x2)
+        {
+            offset = (row << 9) + (col>>1);
+            *(pixel_buffer + offset) = pixel_color; // compute halfword address, set pixel
+            ++col;
+        }
+    }
+}
+
+void VGA_circle (int xm, int ym, int r, short color)
+{
+   int x = -r, y = 0, err = 2-2*r; /* II. Quadrant */ 
+   do {
+      VGA_point (xm-x, ym+y, color); /*   I. Quadrant */
+      VGA_point (xm-y, ym-x, color); /*  II. Quadrant */
+      VGA_point (xm+x, ym-y, color); /* III. Quadrant */
+      VGA_point (xm+y, ym+x, color); /*  IV. Quadrant */
+      r = err;
+      if (r >  x) err += ++x*2+1; /* e_xy+e_x > 0 */
+      if (r <= y) err += ++y*2+1; /* e_xy+e_y < 0 */
+   } while (x < 0);
+}
+
+static int abs(int value)
+{
+  if (value < 0) return -value;
+  else            return  value;
+}
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////   END   ///////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////

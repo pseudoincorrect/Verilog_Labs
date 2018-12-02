@@ -1,0 +1,22 @@
+Mon Dec 11 18:21:18 Jordan Standard Time 2017
+Trace back: expected floating-point number but got "?32767"
+    (processing "-min" option)
+    invoked from within
+".main_pane.wave.interior.cs.body.pw.wf.tree.tree1 itemconfig 8 -radix unsigned -radixenum default -format Analog-Step -autoscale 0 -min ?32767 -max ..."
+    ("eval" body line 1)
+    invoked from within
+"eval $cmd"
+    (procedure "Wave::ApplyWaveSig" line 104)
+    invoked from within
+"Wave::ApplyWaveSig .main_pane.wave.interior.cs.body.pw.wf.tree.tree1"
+    invoked from within
+".main_pane.wave.interior.cs.body.pw.wf.sig_dlg.bb.button0 invoke"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke]"
+    (procedure "tk::ButtonUp" line 24)
+    invoked from within
+"tk::ButtonUp .main_pane.wave.interior.cs.body.pw.wf.sig_dlg.bb.button0"
+    (command bound to event)
+  <2: ::tkerror {expected floating-point number but got "?32767"}
+  <1: ::bgerror {expected floating-point number but got "?32767"}
